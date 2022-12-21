@@ -1,0 +1,323 @@
+devx-web.service	Traceback (most recent call last):
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+devx-web.service	    response = self.full_dispatch_request()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+devx-web.service	    rv = self.handle_user_exception(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 29, in wrapper
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in handle_user_exception
+devx-web.service	    return self.handle_http_exception(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 29, in wrapper
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1743, in handle_http_exception
+devx-web.service	    return handler(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/wrappers.py", line 23, in trace_func
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/__init__.py", line 98, in page_not_found
+devx-web.service	    'message': 'Oh no! Looks like you got lost.',
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/base_page.py", line 517, in render_react_page
+devx-web.service	    return render_page('BasePage/react_base_page.html', **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/base_page.py", line 485, in render_page
+devx-web.service	    css_asset_urls=css_asset_urls,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 401, in traced_render_template
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+devx-web.service	    ctx.app,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 433, in traced_render
+devx-web.service	    return _wrap(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 432, in _wrap
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+devx-web.service	    rv = template.render(context)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/jinja2/patch.py", line 54, in _wrap_render
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+devx-web.service	    return original_render(self, *args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+devx-web.service	    return self.environment.handle_exception(exc_info, True)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+devx-web.service	    reraise(exc_type, exc_value, tb)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+devx-web.service	    raise value.with_traceback(tb)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/react_base_page.html", line 283, in top-level template code
+devx-web.service	    {{ view.AdminTools().render() }}
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 61, in render
+devx-web.service	    context = self.context()
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 48, in context
+devx-web.service	    context.update(self.get_data())
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 29, in get_data
+devx-web.service	    self._template_data = self.data()
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/AdminTools/admin_tools.py", line 66, in data
+devx-web.service	    balance_amount=shared_utilities.get_balance_total(session_user.user_id),
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/payment_mgr/shared_utilities.py", line 176, in get_balance_total
+devx-web.service	    return int(ledger_entry_mgr.get_balance_for_user(user_id))
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/ledger_entry_mgr.py", line 157, in get_balance_for_user
+devx-web.service	    return get_total_by_account_id(account_id)
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/ledger_entry_mgr.py", line 105, in get_total_by_account_id
+devx-web.service	    .for_account_id(account_id) \\
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/dbm/base_dbm.py", line 93, in first
+devx-web.service	    return self.prepare_query().first()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3228, in first
+devx-web.service	    ret = list(self[0:1])
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3018, in __getitem__
+devx-web.service	    return list(res)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3330, in __iter__
+devx-web.service	    return self._execute_and_instances(context)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3355, in _execute_and_instances
+devx-web.service	    result = conn.execute(querycontext.statement, self._params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+devx-web.service	    return meth(self, multiparams, params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+devx-web.service	    return connection._execute_clauseelement(self, multiparams, params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+devx-web.service	    distilled_params,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+devx-web.service	    e, statement, parameters, cursor, context
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+devx-web.service	    util.raise_from_cause(sqlalchemy_exception, exc_info)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+devx-web.service	    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+devx-web.service	    raise value.with_traceback(tb)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+devx-web.service	    cursor, statement, parameters, context
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+devx-web.service	    cursor.execute(statement, parameters)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 166, in execute
+devx-web.service	    result = self._query(query)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 322, in _query
+devx-web.service	    conn.query(q)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 856, in query
+devx-web.service	    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1057, in _read_query_result
+devx-web.service	    result.read()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1340, in read
+devx-web.service	    first_packet = self.connection._read_packet()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1014, in _read_packet
+devx-web.service	    packet.check_error()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 393, in check_error
+devx-web.service	    err.raise_mysql_exception(self._data)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+devx-web.service	    raise errorclass(errno, errval)
+devx-web.service	sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'payments.ledger_entries' doesn't exist")
+devx-web.service	[SQL: SELECT sum(ledger_entries.amount_cents) AS sum
+devx-web.service	FROM ledger_entries
+devx-web.service	WHERE ledger_entries.squared_at IS NULL AND ledger_entries.account_id = %(account_id_1)s
+devx-web.service	 LIMIT %(param_1)s]
+devx-web.service	[parameters: {'account_id_1': 9739, 'param_1': 1}]
+devx-web.service	(Background on this error at: http://sqlalche.me/e/f405)
+devx-web.service	[2019-08-13 23:12:11 +0000] [23182] [ERROR] Error handling request /favicon.ico
+devx-web.service	Traceback (most recent call last):
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+devx-web.service	    rv = self.dispatch_request()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 475, in _traced_request
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+devx-web.service	    return self.view_functions[rule.endpoint](**req.view_args)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/wrappers.py", line 23, in trace_func
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/request/route_wrappers.py", line 189, in decorated_function
+devx-web.service	    return f(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/pages/vanity.py", line 43, in route_vanity
+devx-web.service	    return abort(HttpStatusCode.NotFound)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/werkzeug/exceptions.py", line 774, in abort
+devx-web.service	    return _aborter(status, *args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/werkzeug/exceptions.py", line 755, in __call__
+devx-web.service	    raise self.mapping[code](*args, **kwargs)
+devx-web.service	werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+devx-web.service	During handling of the above exception, another exception occurred:
+devx-web.service	Traceback (most recent call last):
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+devx-web.service	    cursor, statement, parameters, context
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+devx-web.service	    cursor.execute(statement, parameters)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 166, in execute
+devx-web.service	    result = self._query(query)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 322, in _query
+devx-web.service	    conn.query(q)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 856, in query
+devx-web.service	    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1057, in _read_query_result
+devx-web.service	    result.read()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1340, in read
+devx-web.service	    first_packet = self.connection._read_packet()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1014, in _read_packet
+devx-web.service	    packet.check_error()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 393, in check_error
+devx-web.service	    err.raise_mysql_exception(self._data)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+devx-web.service	    raise errorclass(errno, errval)
+devx-web.service	pymysql.err.ProgrammingError: (1146, "Table 'payments.ledger_entries' doesn't exist")
+devx-web.service	The above exception was the direct cause of the following exception:
+devx-web.service	Traceback (most recent call last):
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/gunicorn/workers/sync.py", line 135, in handle
+devx-web.service	    self.handle_request(listener, req, client, addr)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/gunicorn/workers/sync.py", line 176, in handle_request
+devx-web.service	    respiter = self.wsgi(environ, resp.start_response)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+devx-web.service	    return self.wsgi_app(environ, start_response)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqltap/wsgi.py", line 41, in __call__
+devx-web.service	    return self.app(environ, start_response)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 332, in traced_wsgi_app
+devx-web.service	    return wrapped(environ, start_response)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+devx-web.service	    response = self.handle_exception(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 29, in wrapper
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+devx-web.service	    reraise(exc_type, exc_value, tb)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+devx-web.service	    raise value
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+devx-web.service	    response = self.full_dispatch_request()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+devx-web.service	    rv = self.handle_user_exception(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 29, in wrapper
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1815, in handle_user_exception
+devx-web.service	    return self.handle_http_exception(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 20, in wrapper
+devx-web.service	    return func(pin, wrapped, instance, args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/helpers.py", line 29, in wrapper
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/app.py", line 1743, in handle_http_exception
+devx-web.service	    return handler(e)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/wrappers.py", line 23, in trace_func
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/__init__.py", line 98, in page_not_found
+devx-web.service	    'message': 'Oh no! Looks like you got lost.',
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/base_page.py", line 517, in render_react_page
+devx-web.service	    return render_page('BasePage/react_base_page.html', **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/base_page.py", line 485, in render_page
+devx-web.service	    css_asset_urls=css_asset_urls,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 401, in traced_render_template
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+devx-web.service	    ctx.app,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 564, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 433, in traced_render
+devx-web.service	    return _wrap(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/flask/patch.py", line 432, in _wrap
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+devx-web.service	    rv = template.render(context)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/vendor/wrapt/wrappers.py", line 603, in __call__
+devx-web.service	    args, kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/ddtrace/contrib/jinja2/patch.py", line 54, in _wrap_render
+devx-web.service	    return wrapped(*args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/asyncsupport.py", line 76, in render
+devx-web.service	    return original_render(self, *args, **kwargs)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1008, in render
+devx-web.service	    return self.environment.handle_exception(exc_info, True)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/environment.py", line 780, in handle_exception
+devx-web.service	    reraise(exc_type, exc_value, tb)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 37, in reraise
+devx-web.service	    raise value.with_traceback(tb)
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/BasePage/react_base_page.html", line 283, in top-level template code
+devx-web.service	    {{ view.AdminTools().render() }}
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 61, in render
+devx-web.service	    context = self.context()
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 48, in context
+devx-web.service	    context.update(self.get_data())
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/base.py", line 29, in get_data
+devx-web.service	    self._template_data = self.data()
+devx-web.service	  File "/opt/code/patreon_py/patreon/app/web/view/AdminTools/admin_tools.py", line 66, in data
+devx-web.service	    balance_amount=shared_utilities.get_balance_total(session_user.user_id),
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/payment_mgr/shared_utilities.py", line 176, in get_balance_total
+devx-web.service	    return int(ledger_entry_mgr.get_balance_for_user(user_id))
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/ledger_entry_mgr.py", line 157, in get_balance_for_user
+devx-web.service	    return get_total_by_account_id(account_id)
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/manager/ledger_entry_mgr.py", line 105, in get_total_by_account_id
+devx-web.service	    .for_account_id(account_id) \\
+devx-web.service	  File "/opt/code/patreon_py/patreon/model/dbm/base_dbm.py", line 93, in first
+devx-web.service	    return self.prepare_query().first()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3228, in first
+devx-web.service	    ret = list(self[0:1])
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3018, in __getitem__
+devx-web.service	    return list(res)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3330, in __iter__
+devx-web.service	    return self._execute_and_instances(context)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3355, in _execute_and_instances
+devx-web.service	    result = conn.execute(querycontext.statement, self._params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+devx-web.service	    return meth(self, multiparams, params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+devx-web.service	    return connection._execute_clauseelement(self, multiparams, params)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+devx-web.service	    distilled_params,
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+devx-web.service	    e, statement, parameters, cursor, context
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+devx-web.service	    util.raise_from_cause(sqlalchemy_exception, exc_info)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+devx-web.service	    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+devx-web.service	    raise value.with_traceback(tb)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+devx-web.service	    cursor, statement, parameters, context
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 552, in do_execute
+devx-web.service	    cursor.execute(statement, parameters)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 166, in execute
+devx-web.service	    result = self._query(query)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/cursors.py", line 322, in _query
+devx-web.service	    conn.query(q)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 856, in query
+devx-web.service	    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1057, in _read_query_result
+devx-web.service	    result.read()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1340, in read
+devx-web.service	    first_packet = self.connection._read_packet()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 1014, in _read_packet
+devx-web.service	    packet.check_error()
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/connections.py", line 393, in check_error
+devx-web.service	    err.raise_mysql_exception(self._data)
+devx-web.service	  File "/opt/code/patreon_py/venv/lib/python3.7/site-packages/pymysql/err.py", line 107, in raise_mysql_exception
+devx-web.service	    raise errorclass(errno, errval)
+devx-web.service	sqlalchemy.exc.ProgrammingError: (pymysql.err.ProgrammingError) (1146, "Table 'payments.ledger_entries' doesn't exist")
+devx-web.service	[SQL: SELECT sum(ledger_entries.amount_cents) AS sum
+devx-web.service	FROM ledger_entries
+devx-web.service	WHERE ledger_entries.squared_at IS NULL AND ledger_entries.account_id = %(account_id_1)s
+devx-web.service	 LIMIT %(param_1)s]
+devx-web.service	[parameters: {'account_id_1': 9739, 'param_1': 1}]
+devx-web.service	(Background on this error at: http://sqlalche.me/e/f405)
